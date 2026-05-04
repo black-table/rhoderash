@@ -23,7 +23,7 @@
   }
 
   body {
-    font-family: 'Newsreader', 'Times New Roman', serif;
+    font-family: 'Plus Jakarta Sans', 'Helvetica Neue', Arial, sans-serif;
     font-size: 10pt;
     line-height: 1.4;
     color: #000;
@@ -34,7 +34,7 @@
 
   /* Typography */
   h1, h2, h3, h4 {
-    font-family: 'Newsreader', 'Times New Roman', serif;
+    font-family: 'Plus Jakarta Sans', 'Helvetica Neue', Arial, sans-serif;
     page-break-after: avoid;
     page-break-inside: avoid;
     orphans: 3;

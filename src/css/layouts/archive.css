@@ -8,14 +8,13 @@
   text-align: center;
   margin-bottom: var(--space-xl);
   padding-bottom: var(--space-lg);
-  border-bottom: 2px solid var(--color-ink);
+  border-bottom: 2px solid var(--color-primary-blue);
 }
 
 .archive-page__title {
   font-family: var(--font-headline);
   font-size: var(--size-h1);
-  font-optical-sizing: auto;
-  font-variation-settings: "opsz" 72, "wght" 700;
+  font-weight: 800;
   margin-bottom: var(--space-sm);
 }
 
@@ -23,8 +22,7 @@
   font-family: var(--font-headline);
   font-style: italic;
   font-size: var(--size-h3);
-  font-optical-sizing: auto;
-  font-variation-settings: "opsz" 36, "wght" 400;
+  font-weight: 500;
   color: var(--color-ink-light);
 }
 
@@ -37,12 +35,11 @@
 .archive-list__year {
   font-family: var(--font-headline);
   font-size: var(--size-h2);
-  font-optical-sizing: auto;
-  font-variation-settings: "opsz" 48, "wght" 700;
+  font-weight: 700;
   margin-top: var(--space-xl);
   margin-bottom: var(--space-md);
   padding-bottom: var(--space-xs);
-  border-bottom: 2px solid var(--color-ink);
+  border-bottom: 2px solid var(--color-primary-blue);
 }
 
 .archive-list__item {
@@ -68,8 +65,7 @@
 .archive-list__title {
   font-family: var(--font-headline);
   font-size: 1.1rem;
-  font-optical-sizing: auto;
-  font-variation-settings: "opsz" 24, "wght" 600;
+  font-weight: 600;
   line-height: 1.3;
   margin-bottom: var(--space-xs);
 }
@@ -79,17 +75,22 @@
 }
 
 .archive-list__title a:hover {
-  color: var(--color-accent);
+  color: var(--color-primary-blue);
 }
 
 .archive-list__category {
   font-family: var(--font-meta);
   font-size: 0.6875rem;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: var(--color-accent);
-  margin-left: var(--space-sm);
+  color: var(--color-white);
+  background-image: var(--gradient-primary);
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-pill);
+  margin-top: var(--space-xs);
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .archive-list__excerpt {

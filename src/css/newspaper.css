@@ -1,5 +1,6 @@
-/* Newsprint — Newspaper-Style Blog
-   Main stylesheet */
+/* Rhode Rash — main stylesheet */
+
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap");
 
 /* Base */
 @import "base/variables.css";

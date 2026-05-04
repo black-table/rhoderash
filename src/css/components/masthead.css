@@ -33,7 +33,7 @@
 }
 
 .masthead__rss:hover {
-  color: var(--color-accent);
+  color: var(--color-primary-pink);
 }
 
 .masthead__title-wrap {
@@ -43,22 +43,24 @@
 .masthead__title {
   font-family: var(--font-masthead);
   font-size: var(--size-masthead);
-  font-optical-sizing: auto;
-  font-variation-settings: "opsz" 72, "wght" 700;
+  font-weight: 800;
   text-transform: uppercase;
-  line-height: 0.9;
-  letter-spacing: 0.02em;
+  line-height: 0.92;
+  letter-spacing: 0.04em;
   display: inline-block;
-  color: var(--color-ink);
   text-decoration: none;
+  background-image: var(--gradient-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 .masthead__tagline {
   font-family: var(--font-headline);
   font-style: italic;
   font-size: var(--size-medium);
-  font-optical-sizing: auto;
-  font-variation-settings: "opsz" 16, "wght" 500;
+  font-weight: 500;
   color: var(--color-ink-light);
   margin-bottom: var(--space-xs);
 }
@@ -71,12 +73,12 @@
   color: var(--color-ink-light);
   padding: var(--space-sm) 0;
   text-align: right;
-  border-top: 2px solid var(--color-ink);
-  border-bottom: 1px solid var(--color-ink);
+  border-top: 2px solid var(--color-primary-blue);
+  border-bottom: 1px solid var(--color-rule-light);
 }
 
 .masthead__nav {
-  border-bottom: 2px solid var(--color-ink);
+  border-bottom: 2px solid var(--color-primary-blue);
   padding: var(--space-sm) 0;
 }
 
@@ -104,7 +106,7 @@
 
 .masthead__nav-link:hover,
 .masthead__nav-link--active {
-  color: var(--color-accent);
+  color: var(--color-primary-pink);
 }
 
 @media (max-width: 600px) {

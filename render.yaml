@@ -1,0 +1,12 @@
+# Render Blueprint — https://docs.render.com/blueprint-spec
+# Deploy: Dashboard → Blueprints → Connect repo, or link this file when creating a Static Site.
+
+services:
+  - type: web
+    name: rhode-rash
+    runtime: static
+    buildCommand: npm ci && npm run build
+    staticPublishPath: ./_site
+    envVars:
+      - key: NODE_VERSION
+        value: "20"

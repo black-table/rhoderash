@@ -16,6 +16,12 @@ body {
   min-height: 100vh;
   background-color: var(--color-paper);
   color: var(--color-ink);
+  background-image: radial-gradient(
+    circle,
+    rgba(30, 48, 243, 0.04) 1px,
+    transparent 1px
+  );
+  background-size: 20px 20px;
 }
 
 img,
@@ -28,7 +34,7 @@ svg {
 }
 
 a {
-  color: inherit;
+  color: var(--color-link, inherit);
   text-decoration: none;
 }
 
@@ -58,8 +64,8 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   top: -100%;
   left: 0;
-  background: var(--color-ink);
-  color: var(--color-paper);
+  background: var(--color-deep-dark);
+  color: var(--color-white);
   padding: var(--space-sm) var(--space-md);
   z-index: 1000;
   font-family: var(--font-meta);

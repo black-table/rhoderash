@@ -1,19 +1,18 @@
 {
-  "title": "The Newsprint Theme",
-  "description": "Newsprint is a modern 11ty theme meant for publications embracing classic newspaper typography, multi-column layouts, and the timeless design of print journalism in digital form. Our design draws inspiration from the golden age of newspaper publishing, featuring Newsreader variable typeface with optical sizing, justified text with proper hyphenation, drop caps, pull quotes, and ruled lines echoing the craftsmanship of traditional broadsheet journalism.",
-  "url": "https://newsprint.netlify.app",
+  "title": "Rhode Rash",
+  "description": "Bold takes on the Ocean State",
+  "url": "https://rhoderash.com",
   "author": "Editorial Team",
-  "email": "editor@brennanbrown.ca",
-  "donationUrl": "https://ko-fi.com/brennan",
+  "email": "editor@rhoderash.com",
+  "donationUrl": "https://ko-fi.com/rhoderash",
   "social": {
-    "mastodon": "https://social.lol/@brennan",
-    "threads": "https://threads.com/brennankbrown",
-    "bluesky": "https://bsky.app/profile/brennanbrown.ca"
+    "bluesky": "https://bsky.app/profile/rhoderash.com",
+    "x": "https://x.com/rhode_rash"
   },
   "noindex": true,
   "masthead": {
-    "tagline": "All the News That's Fit to Ship!",
-    "established": "2026"
+    "tagline": "Bold Takes on the Ocean State",
+    "established": "2024"
   },
-  "copyright": "© 2026 Code is MIT and content is CC BY-SA"
+  "copyright": "© 2026 RhodeRash.com"
 }

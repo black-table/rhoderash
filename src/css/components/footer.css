@@ -5,7 +5,7 @@
 }
 
 .site-footer__rule {
-  border-top: 2px solid var(--color-ink);
+  border-top: 2px solid var(--color-primary-blue);
   margin-bottom: var(--space-xl);
 }
 
@@ -48,7 +48,7 @@
 }
 
 .site-footer__list a:hover {
-  color: var(--color-accent);
+  color: var(--color-primary-blue);
 }
 
 .site-footer__rss {
@@ -62,7 +62,7 @@
 }
 
 .site-footer__rss a:hover {
-  color: var(--color-accent);
+  color: var(--color-primary-pink);
 }
 
 .site-footer__bottom {
@@ -93,29 +93,32 @@
   background: var(--color-white);
   flex: 1;
   min-width: 180px;
+  border-radius: var(--radius-brand);
 }
 
 .newsletter-signup__input:focus {
-  outline: 2px solid var(--color-ink);
-  outline-offset: -2px;
+  outline: 2px solid var(--color-primary-blue);
+  outline-offset: 2px;
 }
 
 .newsletter-signup__button {
   font-family: var(--font-meta);
   font-size: var(--size-small);
-  font-variation-settings: "wght" 600;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   padding: var(--space-sm) var(--space-lg);
-  background: var(--color-ink);
-  color: var(--color-paper);
-  border: none;
+  background: var(--color-primary-blue);
+  color: var(--color-white);
+  border: 2px solid var(--color-primary-blue);
+  border-radius: var(--radius-brand);
   cursor: pointer;
-  transition: background var(--transition);
+  transition: background var(--transition), border-color var(--transition);
 }
 
 .newsletter-signup__button:hover {
-  background: var(--color-accent);
+  background: #1528d4;
+  border-color: #1528d4;
 }
 
 @media (max-width: 768px) {

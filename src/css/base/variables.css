@@ -1,31 +1,50 @@
 :root {
-  /* Colors — Newsprint palette */
-  --color-ink: #2f2f2f;
-  --color-ink-light: #5a5a5a;
-  --color-ink-faint: #8a8a8a;
-  --color-paper: #f9f7f1;
-  --color-paper-dark: #eae6da;
-  --color-rule: #2f2f2f;
-  --color-rule-light: #c4c0b6;
-  --color-accent: #8b0000;
-  --color-link: #2f2f2f;
-  --color-link-hover: #8b0000;
+  /* Brand — Rhode Rash “Electric Ocean” */
+  --color-primary-blue: #1e30f3;
+  --color-primary-pink: #e21e80;
+  --color-deep-dark: #212529;
   --color-white: #ffffff;
 
-  /* Typography */
-  --font-masthead: 'Newsreader', Georgia, serif;
-  --font-headline: 'Newsreader', Georgia, serif;
-  --font-body: 'Merriweather', Georgia, 'Times New Roman', serif;
-  --font-meta: 'Source Sans 3', 'Helvetica Neue', Arial, sans-serif;
+  --gradient-primary: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
+
+  /* Semantic aliases (used across components) */
+  --color-ink: var(--color-deep-dark);
+  --color-ink-light: #495057;
+  --color-ink-faint: #6c757d;
+  --color-paper: var(--color-white);
+  --color-paper-dark: #f8f9fa;
+  --color-rule: #dee2e6;
+  --color-rule-light: #e9ecef;
+  --color-accent: var(--color-primary-pink);
+  --color-link: var(--color-primary-blue);
+  --color-link-hover: var(--color-primary-pink);
+
+  /* Typography — Plus Jakarta Sans */
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  --font-body: var(--font-sans);
+  --font-headline: var(--font-sans);
+  --font-masthead: var(--font-sans);
+  --font-meta: var(--font-sans);
+  --font-mono: SFMono-Regular, ui-monospace, Menlo, Consolas, "Courier New", monospace;
 
   /* Font sizes */
   --size-masthead: clamp(2.5rem, 6vw, 4.5rem);
   --size-h1: clamp(1.75rem, 3.5vw, 2.75rem);
   --size-h2: clamp(1.35rem, 2.5vw, 2rem);
   --size-h3: clamp(1.1rem, 2vw, 1.5rem);
+  --size-medium: 1.125rem;
   --size-body: 1rem;
   --size-small: 0.875rem;
   --size-caption: 0.8125rem;
+
+  /* Shape & depth */
+  --radius-brand: 1rem;
+  --radius-pill: 9999px;
+  --shadow-card: 0 0.35rem 1.5rem rgba(30, 48, 243, 0.08),
+    0 0.15rem 0.35rem rgba(33, 37, 41, 0.06);
+  --shadow-card-hover: 0 0.5rem 2rem rgba(30, 48, 243, 0.12),
+    0 0.2rem 0.5rem rgba(33, 37, 41, 0.08);
 
   /* Spacing */
   --space-xs: 0.25rem;
@@ -43,4 +62,59 @@
 
   /* Transitions */
   --transition: 0.2s ease;
+}
+
+/* Gradient & text utilities */
+.bg-gradient-primary-to-secondary {
+  background-image: var(--gradient-primary);
+}
+
+.text-gradient {
+  background-image: var(--gradient-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Dot textures (decorative backgrounds) */
+.dots-1 {
+  background-image: radial-gradient(
+    circle,
+    rgba(30, 48, 243, 0.12) 1px,
+    transparent 1px
+  );
+  background-size: 14px 14px;
+}
+
+.dots-2 {
+  background-image: radial-gradient(
+    circle,
+    rgba(226, 30, 128, 0.1) 1px,
+    transparent 1px
+  );
+  background-size: 18px 18px;
+}
+
+.dots-3 {
+  background-image: radial-gradient(
+    circle,
+    rgba(33, 37, 41, 0.06) 1px,
+    transparent 1px
+  );
+  background-size: 12px 12px;
+}
+
+.dots-4 {
+  background-image: radial-gradient(
+    circle at 30% 30%,
+    rgba(30, 48, 243, 0.08) 1px,
+    transparent 1px
+  ),
+    radial-gradient(
+      circle at 70% 70%,
+      rgba(226, 30, 128, 0.08) 1px,
+      transparent 1px
+    );
+  background-size: 20px 20px;
 }
