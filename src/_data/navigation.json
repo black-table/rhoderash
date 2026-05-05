@@ -1,7 +1,7 @@
 [
   { "label": "News", "url": "/category/news/" },
   { "label": "Opinion", "url": "/category/opinion/" },
-  { "label": "Features", "url": "/category/features/" },
+  { "label": "Feature", "url": "/category/feature/" },
   { "label": "Culture", "url": "/category/culture/" },
   { "label": "Business", "url": "/category/business/" },
   { "label": "Archive", "url": "/archive/" },
